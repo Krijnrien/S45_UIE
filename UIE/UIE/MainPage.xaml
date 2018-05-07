@@ -1,0 +1,123 @@
+﻿<Page
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UIE"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:Custom="using:Windows.UI.Xaml.Controls.Maps"
+    x:Class="UIE.MainPage"
+    mc:Ignorable="d" Height="600">
+
+	<Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Margin="0,0,0,10" Height="600" Width="1280">
+		<Button x:Name="Button_graph" Height="200" Margin="0,0,0,400" Width="200" Background="{x:Null}" BorderBrush="Gray">
+			<Image Source="Assets/graph_icon.png"/>
+		</Button>
+		<Button x:Name="Button_devices" Height="200" Margin="0,200,0,200" Width="200" Background="{x:Null}" BorderBrush="Gray" BorderThickness="2,0,2,0">
+			<Image Source="Assets/device_icon.png"/>
+		</Button>
+		<Button x:Name="Button_settings" Height="200" Margin="0,400,0,0" Width="200" Background="{x:Null}" BorderBrush="Gray">
+			<Image Source="Assets/settings_icon.png"/>
+		</Button>
+
+		<TextBlock HorizontalAlignment="Left" Margin="220,10,0,0" Text="Windows 10" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36"/>
+
+		<Image HorizontalAlignment="Left" Height="172" Margin="218,63,0,0" VerticalAlignment="Top" Width="154" Source="Assets/usage-pie.png"/>
+		<TextBlock HorizontalAlignment="Left" Margin="380,81,0,0" Text="Chrome: 200MB" TextWrapping="Wrap" VerticalAlignment="Top"/>
+		<TextBlock HorizontalAlignment="Left" Margin="380,106,0,0" Text="Skype: 403MB" TextWrapping="Wrap" VerticalAlignment="Top" />
+		<TextBlock HorizontalAlignment="Left" Margin="380,129,0,0" Text="Steam: 12GB" TextWrapping="Wrap" VerticalAlignment="Top"/>
+		<TextBlock HorizontalAlignment="Left" Margin="380,151,0,0" Text="Tableau: 37MB" TextWrapping="Wrap" VerticalAlignment="Top"/>
+		<TextBlock HorizontalAlignment="Left" Margin="380,173,0,0" Text="Utorrent: 122GB" TextWrapping="Wrap" VerticalAlignment="Top"/>
+
+		<TextBlock HorizontalAlignment="Left" Margin="220,233,0,0" Text="Network usage graph" TextWrapping="Wrap" VerticalAlignment="Top" Height="25" Width="167" FontSize="16"/>
+		<Image HorizontalAlignment="Left" Height="331" Margin="220,259,0,0" VerticalAlignment="Top" Width="384" Source="Assets/network-chart.png"/>
+
+		<TextBlock HorizontalAlignment="Left" Margin="609,233,0,0" Text="Outbound connections" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="16" FontFamily="Segoe UI"/>
+		<ListView HorizontalAlignment="Left" Height="327" Margin="609,259,0,0" VerticalAlignment="Top" Width="300">
+			<RelativePanel Height="52" Width="280" Margin="0,0,0,2">
+				<Image HorizontalAlignment="Left" Height="52" VerticalAlignment="Top" Width="80" Margin="0,0,-80,-50" Source="Assets/NL-flag.png"/>
+				<TextBlock HorizontalAlignment="Left" Height="20" Text="54.243.59.7" TextWrapping="Wrap" VerticalAlignment="Top" Width="110" Margin="100,16,-140,-16" FontSize="18"/>
+				<TextBlock HorizontalAlignment="Left" Height="29" Text="85MB" TextWrapping="Wrap" VerticalAlignment="Top" Width="66" Margin="214,13,-218,-22" FontSize="20"/>
+			</RelativePanel>
+			<RelativePanel Height="52" Width="280" Margin="0,0,0,2">
+				<Image HorizontalAlignment="Left" Height="52" VerticalAlignment="Top" Width="80" Margin="0,0,-80,-50" Source="Assets/NO-flag.png"/>
+				<TextBlock HorizontalAlignment="Left" Height="20" Text="trello.com" TextWrapping="Wrap" VerticalAlignment="Top" Width="110" Margin="100,16,-140,-16" FontSize="18"/>
+				<TextBlock HorizontalAlignment="Left" Height="29" Text="32MB" TextWrapping="Wrap" VerticalAlignment="Top" Width="66" Margin="214,13,-218,-22" FontSize="20"/>
+			</RelativePanel>
+			<RelativePanel Height="52" Width="280" Margin="0,0,0,2">
+				<Image HorizontalAlignment="Left" Height="52" VerticalAlignment="Top" Width="80" Margin="0,0,-80,-50" Source="Assets/US-flag.png"/>
+				<TextBlock HorizontalAlignment="Left" Height="26" Text="xmp.i.google.com" TextWrapping="Wrap" VerticalAlignment="Top" Width="110" Margin="100,16,-140,-22" FontSize="18"/>
+				<TextBlock HorizontalAlignment="Left" Height="29" Text="30MB" TextWrapping="Wrap" VerticalAlignment="Top" Width="66" Margin="214,13,-218,-22" FontSize="20"/>
+			</RelativePanel>
+			<RelativePanel Height="52" Width="280" Margin="0,0,0,2">
+				<Image HorizontalAlignment="Left" Height="52" VerticalAlignment="Top" Width="80" Margin="0,0,-80,-50" Source="Assets/NL-flag.png"/>
+				<TextBlock HorizontalAlignment="Left" Height="26" Text="kaspersky.com" TextWrapping="Wrap" VerticalAlignment="Top" Width="110" Margin="100,16,-140,-22" FontSize="18"/>
+				<TextBlock HorizontalAlignment="Left" Height="29" Text="18MB" TextWrapping="Wrap" VerticalAlignment="Top" Width="66" Margin="214,13,-218,-22" FontSize="20"/>
+			</RelativePanel>
+			<RelativePanel Height="52" Width="280" Margin="0,0,0,2">
+				<Image HorizontalAlignment="Left" Height="52" VerticalAlignment="Top" Width="80" Margin="0,0,-80,-50" Source="Assets/BE-flag.png"/>
+				<TextBlock HorizontalAlignment="Left" Height="22" Text="patat.be" TextWrapping="Wrap" VerticalAlignment="Top" Width="110" Margin="100,16,-140,-18" FontSize="18"/>
+				<TextBlock HorizontalAlignment="Left" Height="29" Text="946KB" TextWrapping="Wrap" VerticalAlignment="Top" Width="66" Margin="214,13,-218,-22" FontSize="20"/>
+			</RelativePanel>
+			<RelativePanel Height="52" Width="280" Margin="0,0,0,2">
+				<Image HorizontalAlignment="Left" Height="52" VerticalAlignment="Top" Width="80" Margin="0,0,-80,-50" Source="Assets/US-flag.png"/>
+				<TextBlock HorizontalAlignment="Left" Height="20" Text="10.234.2.18" TextWrapping="Wrap" VerticalAlignment="Top" Width="110" Margin="100,16,-140,-16" FontSize="18"/>
+				<TextBlock HorizontalAlignment="Left" Height="29" Text="857KB" TextWrapping="Wrap" VerticalAlignment="Top" Width="66" Margin="214,13,-218,-22" FontSize="20"/>
+			</RelativePanel>
+			<RelativePanel Height="52" Width="280" Margin="0,0,0,2">
+				<Image HorizontalAlignment="Left" Height="52" VerticalAlignment="Top" Width="80" Margin="0,0,-80,-50" Source="Assets/NO-flag.png"/>
+				<TextBlock HorizontalAlignment="Left" Height="20" Text="127.0.0.1" TextWrapping="Wrap" VerticalAlignment="Top" Width="110" Margin="100,16,-140,-16" FontSize="18"/>
+				<TextBlock HorizontalAlignment="Left" Height="29" Text="500KB" TextWrapping="Wrap" VerticalAlignment="Top" Width="66" Margin="214,13,-218,-22" FontSize="20"/>
+			</RelativePanel>
+			<RelativePanel Height="52" Width="280" Margin="0,0,0,2">
+				<Image HorizontalAlignment="Left" Height="52" VerticalAlignment="Top" Width="80" Margin="0,0,-80,-50" Source="Assets/NL-flag.png"/>
+				<TextBlock HorizontalAlignment="Left" Height="20" Text="192.168.1.1" TextWrapping="Wrap" VerticalAlignment="Top" Width="110" Margin="100,16,-140,-16" FontSize="18"/>
+				<TextBlock HorizontalAlignment="Left" Height="29" Text="32KB" TextWrapping="Wrap" VerticalAlignment="Top" Width="66" Margin="214,13,-218,-22" FontSize="20"/>
+			</RelativePanel>
+		</ListView>
+
+		<TextBlock HorizontalAlignment="Left" Margin="920,233,0,0" Text="Inbound connections" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="16"/>
+		<ListView HorizontalAlignment="Left" Height="327" Margin="920,259,0,0" VerticalAlignment="Top" Width="300">
+			<RelativePanel Height="52" Width="280" Margin="0,0,0,2">
+				<Image HorizontalAlignment="Left" Height="52" VerticalAlignment="Top" Width="80" Margin="0,0,-80,-50" Source="Assets/NL-flag.png"/>
+				<TextBlock HorizontalAlignment="Left" Height="20" Text="192.168.1.1" TextWrapping="Wrap" VerticalAlignment="Top" Width="110" Margin="100,16,-140,-16" FontSize="18"/>
+				<TextBlock HorizontalAlignment="Left" Height="29" Text="10MB" TextWrapping="Wrap" VerticalAlignment="Top" Width="66" Margin="214,13,-218,-22" FontSize="20"/>
+			</RelativePanel>
+			<RelativePanel Height="52" Width="280" Margin="0,0,0,2">
+				<Image HorizontalAlignment="Left" Height="52" VerticalAlignment="Top" Width="80" Margin="0,0,-80,-50" Source="Assets/US-flag.png"/>
+				<TextBlock HorizontalAlignment="Left" Height="20" Text="10.234.2.18" TextWrapping="Wrap" VerticalAlignment="Top" Width="110" Margin="100,16,-140,-16" FontSize="18"/>
+				<TextBlock HorizontalAlignment="Left" Height="29" Text="8MB" TextWrapping="Wrap" VerticalAlignment="Top" Width="66" Margin="214,13,-218,-22" FontSize="20"/>
+			</RelativePanel>
+			<RelativePanel Height="52" Width="280" Margin="0,0,0,2">
+				<Image HorizontalAlignment="Left" Height="52" VerticalAlignment="Top" Width="80" Margin="0,0,-80,-50" Source="Assets/US-flag.png"/>
+				<TextBlock HorizontalAlignment="Left" Height="26" Text="xmp.i.google.com" TextWrapping="Wrap" VerticalAlignment="Top" Width="110" Margin="100,16,-140,-22" FontSize="18"/>
+				<TextBlock HorizontalAlignment="Left" Height="29" Text="1MB" TextWrapping="Wrap" VerticalAlignment="Top" Width="66" Margin="214,13,-218,-22" FontSize="20"/>
+			</RelativePanel>
+			<RelativePanel Height="52" Width="280" Margin="0,0,0,2">
+				<Image HorizontalAlignment="Left" Height="52" VerticalAlignment="Top" Width="80" Margin="0,0,-80,-50" Source="Assets/BE-flag.png"/>
+				<TextBlock HorizontalAlignment="Left" Height="22" Text="patat.be" TextWrapping="Wrap" VerticalAlignment="Top" Width="110" Margin="100,16,-140,-18" FontSize="18"/>
+				<TextBlock HorizontalAlignment="Left" Height="29" Text="943KB" TextWrapping="Wrap" VerticalAlignment="Top" Width="66" Margin="214,13,-218,-22" FontSize="20"/>
+			</RelativePanel>
+			<RelativePanel Height="52" Width="280" Margin="0,0,0,2">
+				<Image HorizontalAlignment="Left" Height="52" VerticalAlignment="Top" Width="80" Margin="0,0,-80,-50" Source="Assets/NL-flag.png"/>
+				<TextBlock HorizontalAlignment="Left" Height="26" Text="kaspersky.com" TextWrapping="Wrap" VerticalAlignment="Top" Width="110" Margin="100,16,-140,-22" FontSize="18"/>
+				<TextBlock HorizontalAlignment="Left" Height="29" Text="847KB" TextWrapping="Wrap" VerticalAlignment="Top" Width="66" Margin="214,13,-218,-22" FontSize="20"/>
+			</RelativePanel>
+			<RelativePanel Height="52" Width="280" Margin="0,0,0,2">
+				<Image HorizontalAlignment="Left" Height="52" VerticalAlignment="Top" Width="80" Margin="0,0,-80,-50" Source="Assets/NO-flag.png"/>
+				<TextBlock HorizontalAlignment="Left" Height="20" Text="127.0.0.1" TextWrapping="Wrap" VerticalAlignment="Top" Width="110" Margin="100,16,-140,-16" FontSize="18"/>
+				<TextBlock HorizontalAlignment="Left" Height="29" Text="473KB" TextWrapping="Wrap" VerticalAlignment="Top" Width="66" Margin="214,13,-218,-22" FontSize="20"/>
+			</RelativePanel>
+			<RelativePanel Height="52" Width="280" Margin="0,0,0,2">
+				<Image HorizontalAlignment="Left" Height="52" VerticalAlignment="Top" Width="80" Margin="0,0,-80,-50" Source="Assets/NO-flag.png"/>
+				<TextBlock HorizontalAlignment="Left" Height="20" Text="trello.com" TextWrapping="Wrap" VerticalAlignment="Top" Width="110" Margin="100,16,-140,-16" FontSize="18"/>
+				<TextBlock HorizontalAlignment="Left" Height="29" Text="463KB" TextWrapping="Wrap" VerticalAlignment="Top" Width="66" Margin="214,13,-218,-22" FontSize="20"/>
+			</RelativePanel>
+			<RelativePanel Height="52" Width="280" Margin="0,0,0,2">
+				<Image HorizontalAlignment="Left" Height="52" VerticalAlignment="Top" Width="80" Margin="0,0,-80,-50" Source="Assets/NL-flag.png"/>
+				<TextBlock HorizontalAlignment="Left" Height="20" Text="54.243.59.7" TextWrapping="Wrap" VerticalAlignment="Top" Width="110" Margin="100,16,-140,-16" FontSize="18"/>
+				<TextBlock HorizontalAlignment="Left" Height="29" Text="204KB" TextWrapping="Wrap" VerticalAlignment="Top" Width="66" Margin="214,13,-218,-22" FontSize="20"/>
+			</RelativePanel>
+		</ListView>
+		<TextBlock HorizontalAlignment="Left" Margin="682,81,0,0" Text="Texxtttttttttttttttttttttttttttttttttttt" TextWrapping="Wrap" VerticalAlignment="Top" Height="65" Width="538" FontSize="48" />
+	</Grid>
+</Page>
